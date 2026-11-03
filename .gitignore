@@ -62,3 +62,33 @@ __pycache__/
 venv/
 env/
 .DS_Store
+
+# Restricted match data and tracking files (NEVER commit to Git)
+data/
+*.mp4
+*.txt
+!requirements.txt
+*.xml
+
+# Generated binary and NumPy cache files
+*.npz
+*.npy
+
+# Evaluation outputs and temporary reports
+evaluation/results/*.csv
+evaluation/reports/
+evaluation/scoreboard.csv
+
+# Python byte-compiled files and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
